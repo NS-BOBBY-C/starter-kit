@@ -8,7 +8,8 @@ This is a blank React Native project setup with Viro.
 2. `cd starter-kit`
 3. `npm install`
 4. `npx pod-install` (iOS)
-5. `npx react-native run-android` or `npx react-native run-ios`
+5. On android, you might have to run `chmod +x android/gradlew` to get android to run correctly.
+6. `npx react-native run-android` or `npx react-native run-ios`
 
 NOTE: The variant arguments are not needed for debug or release.
 
