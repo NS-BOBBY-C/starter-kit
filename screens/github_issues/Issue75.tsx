@@ -15,6 +15,8 @@ const HelloWorldSceneAR = () => {
         loop={true}
         position={[0, 2, -5]}
         scale={[2, 2, 0]}
+        onBufferStart={() => console.log('buffer start')}
+        onBufferEnd={() => console.log('buffer end')}
       />
     </ViroARScene>
   );

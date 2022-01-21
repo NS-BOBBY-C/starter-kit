@@ -241,6 +241,8 @@ export default () => {
         return <Issue74 />;
       case '75':
         return <Issue75 />;
+      case '75':
+        return <Issue75 />;
       default:
         return (
           <ScrollView
