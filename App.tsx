@@ -50,6 +50,8 @@ import ViroSpinner from './screens/viro_tests/ViroSpinner';
 import ViroSpotLight from './screens/viro_tests/ViroSpotLight';
 import ViroText from './screens/viro_tests/ViroText';
 import ViroVideo from './screens/viro_tests/ViroVideo';
+import packageJson from './package.json';
+import Issue74 from './screens/github_issues/Issue74';
 
 // import ViroARObjectMarker from './screens/viro_tests/ViroARObjectMarker';
 
@@ -112,7 +114,7 @@ const demos = [
   {title: 'VR Demo', id: 'VR'},
 ];
 
-const github_issues = ['24', '31', '41', '58', '62'];
+const github_issues = ['24', '31', '41', '58', '62', '74'];
 
 const discord_issues = [
   {
@@ -234,6 +236,8 @@ export default () => {
         return <Issue58 />;
       case '62':
         return <Issue62 />;
+      case '74':
+        return <Issue74 />;
       default:
         return (
           <ScrollView
@@ -241,6 +245,13 @@ export default () => {
             contentContainerStyle={styles.content}>
             <View style={styles.header}>
               <Text style={styles.headerText}>Viro Test App</Text>
+              <Text>
+                Viro Version:{' '}
+                {packageJson.dependencies['@viro-community/react-viro'].replace(
+                  '^',
+                  '',
+                )}
+              </Text>
             </View>
             <Pressable
               onPress={() => Linking.openURL('https://github.com/NS-BOBBY-C')}

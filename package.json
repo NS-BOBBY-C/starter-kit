@@ -11,7 +11,7 @@
     "setup": "rm -rf node_modules && yarn install && cd ios && pod install && cd .."
   },
   "dependencies": {
-    "@viro-community/react-viro": "../viro",
+    "@viro-community/react-viro": "^2.22.0",
     "fsevents": "^2.3.2",
     "react": "17.0.2",
     "react-native": "0.65.1"
