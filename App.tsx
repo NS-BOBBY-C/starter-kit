@@ -52,6 +52,7 @@ import ViroText from './screens/viro_tests/ViroText';
 import ViroVideo from './screens/viro_tests/ViroVideo';
 import packageJson from './package.json';
 import Issue74 from './screens/github_issues/Issue74';
+import Issue75 from './screens/github_issues/Issue75';
 
 // import ViroARObjectMarker from './screens/viro_tests/ViroARObjectMarker';
 
@@ -114,7 +115,7 @@ const demos = [
   {title: 'VR Demo', id: 'VR'},
 ];
 
-const github_issues = ['24', '31', '41', '58', '62', '74'];
+const github_issues = ['24', '31', '41', '58', '62', '74', '75'];
 
 const discord_issues = [
   {
@@ -238,6 +239,8 @@ export default () => {
         return <Issue62 />;
       case '74':
         return <Issue74 />;
+      case '75':
+        return <Issue75 />;
       default:
         return (
           <ScrollView
