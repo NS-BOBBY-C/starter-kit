@@ -24,16 +24,18 @@ export default () => {
   return (
     <ViroARSceneNavigator
       autofocus={true}
-      initialScene={{
-        scene: HelloWorldSceneAR,
-      }}
+      initialScene={
+        {scene: HelloWorldSceneAR}
+        }
       style={styles.f1}
     />
   );
 };
 
 const styles = StyleSheet.create({
-  f1: {flex: 1},
+  f1: {
+    flex: 1
+  },
   helloWorldTextStyle: {
     fontFamily: 'Arial',
     fontSize: 30,
