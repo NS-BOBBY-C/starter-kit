@@ -8,6 +8,7 @@
     "start": "react-native start",
     "test": "jest",
     "lint": "eslint .",
+    "generate-public-release-starter-kit": "cd ../ && rm -rf starter-kit-public-release && cp -r starter-kit starter-kit-public-release && cd starter-kit-public-release && yarn add @viro-community/react-viro && yarn setup",
     "setup": "rm -rf node_modules ios/Podfile.lock ios/Pods yarn.lock package-lock.json && yarn install && cd ios && pod install && cd .."
   },
   "dependencies": {
